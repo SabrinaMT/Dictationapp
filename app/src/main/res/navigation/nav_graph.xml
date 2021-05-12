@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.taicanlanguage.MainFragment"
+        android:label="Japanese Revision"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_quiz02Fragment"
+            app:destination="@id/quiz02Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_quiz03Fragment"
+            app:destination="@id/quiz03Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson01Fragment"
+        android:name="com.example.taicanlanguage.Lesson01Fragment"
+        android:label="Lesson01"
+        tools:layout="@layout/fragment_lesson01" />
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.example.taicanlanguage.CommunityFragment"
+        android:label="Community"
+        tools:layout="@layout/fragment_community" />
+    <activity
+        android:id="@+id/quizFragment"
+        android:name="com.example.taicanlanguage.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+    </activity>
+    <activity
+        android:id="@+id/quiz02Fragment"
+        android:name="com.example.taicanlanguage.Quiz02Fragment"
+        android:label="fragment_quiz02"
+        tools:layout="@layout/fragment_quiz02" />
+    <activity
+        android:id="@+id/quiz03Fragment"
+        android:name="com.example.taicanlanguage.Quiz03Fragment"
+        android:label="Quiz03Fragment" />
+    <activity
+        android:id="@+id/community2"
+        android:name="com.example.taicanlanguage.Community"
+        android:label="activity_community"
+        tools:layout="@layout/activity_community" />
+</navigation>
